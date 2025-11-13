@@ -110,7 +110,7 @@ veryOldInventors = inventors.filter((ele) => {
 });
 
 // Check your work:
-//console.log("Exercise 1 my result: ", veryOldInventors);
+console.log("Exercise 1 my result: ", veryOldInventors);
 // console.log('Exercise 1 correct result: ', [
 //   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
 //   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
@@ -139,7 +139,7 @@ inventorNames = inventors.map((inv) => ({
   last: inv.last,
 }));
 // Check your work:
-//console.log("Exercise 2 my result: ", inventorNames);
+console.log("Exercise 2 my result: ", inventorNames);
 // console.log("Exercise 2 correct result: ", [
 //   { first: "Albert", last: "Einstein" },
 //   { first: "Isaac", last: "Newton" },
@@ -167,7 +167,7 @@ let sortedByBirthYear = [];
 // Complete the exercise in the space below:
 sortedByBirthYear = [...inventors].sort((a, b) => a.year - b.year);
 // Check your work:
-//console.log("Exercise 3 my result: ", sortedByBirthYear);
+console.log("Exercise 3 my result: ", sortedByBirthYear);
 // console.log('Exercise 3 correct result: ', [
 //   { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
 //   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
@@ -203,7 +203,7 @@ inventorNamedAda = inventors.find((inventor) => {
   return inventor.first === "Ada";
 });
 // Check your work:
-// console.log("Exercise 4 my result: ", inventorNamedAda);
+console.log("Exercise 4 my result: ", inventorNamedAda);
 // console.log('Exercise 4 correct result: ', {
 //   first: 'Ada',
 //   last: 'Lovelace',
@@ -230,7 +230,7 @@ firstLast = people.map((p) => {
   return p.split(", ").reverse().join(" ");
 });
 // Check your work:
-//console.log("Exercise 5 my result: ", firstLast);
+console.log("Exercise 5 my result: ", firstLast);
 // console.log('Exercise 5 correct result: ', [
 //   'Carl Becker',
 //   'Samuel Beckett',
@@ -293,7 +293,7 @@ isAdultPresent = devs.some((p) => {
   return 2025 - p.year >= 18;
 });
 // Check your work:
-//console.log("Exercise 6 my result: ", isAdultPresent);
+console.log("Exercise 6 my result: ", isAdultPresent);
 //console.log("Exercise 6 correct result: ", true);
 //-----------------------------------------------------------------------------------------------------------
 /*
@@ -316,7 +316,7 @@ isEveryone19OrOlder = devs.every((d) => {
   return 2025 - d.year >= 19;
 });
 // Check your work:
-//console.log("Exercise 7 my result: ", isEveryone19OrOlder);
+console.log("Exercise 7 my result: ", isEveryone19OrOlder);
 //console.log("Exercise 7 correct result: ", false);
 //------------------------------------------------------------------------------------------------------------
 /*
@@ -335,7 +335,7 @@ commentById = comments.find((c) => {
   return c.id === 823423;
 });
 // Check your work:
-//console.log("Exercise 8 my result: ", commentById);
+console.log("Exercise 8 my result: ", commentById);
 //console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
 //--------------------------------------------------------------------------------------------------------------
 /*
@@ -354,7 +354,7 @@ idx = comments.findIndex((c) => {
   return c.id === 123523;
 });
 // Check your work:
-//console.log("Exercise 9 my result: ", idx);
+console.log("Exercise 9 my result: ", idx);
 //console.log('Exercise 9 correct result: ', 3);
 //---------------------------------------------------------------------------------------------------------------
 /*
@@ -386,7 +386,7 @@ totalYearsLived = inventors.reduce((accumulator, years) => {
 }, 0);
 // Check your work:
 console.log("Level Up 1 my result: ", totalYearsLived);
-console.log("Level Up 1 correct result: ", 861);
+//console.log("Level Up 1 correct result: ", 861);
 //----------------------------------------------------------------------------------------------------------------
 /*
 Level Up exercise 2: Array.prototype.reduce()
