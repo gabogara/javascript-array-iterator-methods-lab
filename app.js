@@ -164,11 +164,10 @@ the past to those born most recently).
 
 let sortedByBirthYear = [];
 
-sortedByBirthYear = [...inventors].sort((a, b) => a.year - b.year);
 // Complete the exercise in the space below:
-
+sortedByBirthYear = [...inventors].sort((a, b) => a.year - b.year);
 // Check your work:
-console.log("Exercise 3 my result: ", sortedByBirthYear);
+//console.log("Exercise 3 my result: ", sortedByBirthYear);
 // console.log('Exercise 3 correct result: ', [
 //   { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
 //   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
@@ -183,3 +182,31 @@ console.log("Exercise 3 my result: ", sortedByBirthYear);
 //   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
 //   { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
 // ]);
+//--------------------------------------------------------------------------------------------------
+/* 
+Exercise 4: Array.prototype.find()
+
+Use Array.prototype.find() to identify the inventor with the first name 'Ada' 
+from an array of inventor objects
+
+- You have an array of objects, each representing an inventor with various 
+  properties including their first name.
+- Utilize the Array.prototype.find() method to locate the object for the 
+  inventor with the first name 'Ada'.
+- Assign the found inventor object to the variable inventorNamedAda
+*/
+
+let inventorNamedAda = {};
+
+// Complete the exercise in the space below:
+inventorNamedAda = inventors.find((inventor) => {
+  return inventor.first === "Ada";
+});
+// Check your work:
+console.log("Exercise 4 my result: ", inventorNamedAda);
+// console.log('Exercise 4 correct result: ', {
+//   first: 'Ada',
+//   last: 'Lovelace',
+//   year: 1815,
+//   passed: 1852,
+// });
